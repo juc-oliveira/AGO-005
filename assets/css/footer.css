@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(201, 201, 201);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 2vw 0 2vw;
+    padding: 1.5vw;
+}
+
+.footer-content h3 {
+    cursor: default;
+    font-family: 'Fredoka';
+    font-size: 20px;
+    margin-bottom: 1vw;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content li {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+
+.footer-content a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-contatos i {
+    cursor: pointer;
+    font-size: 22px;
+    margin-right: 0.5vw;
+}
+
+.footer-contatos p {
+    cursor: pointer;
+}
+
+#div-config-icones {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-rede-social i{
+    cursor: pointer;
+    font-size: 45px;
+    margin-right: 1vw;
+}
+
+#separacao-linha {
+    margin: 0 2vw 0 2vw;
+}
+
+.grid-pagamento-envio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5vh 2vw 0 2vw;
+}
+
+.grid-pagamento-envio img {
+    height: 4vh;
+    margin-right: 0.5vw;
+    width: 4vw;
+    cursor: pointer;
+}
+
+.grid-img-pagamento-envio {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.grid-img-pagamento-envio h3 {
+    cursor: default;
+    font-family: 'Fredoka';
+    font-size: 20px;
+    margin-right: 1.5vw;
+}
+
+#texto-copyright {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    margin: 6vw 2vw 0 2vw;
+    padding: 2vw;
+    text-align: center;
+    cursor: default;
+}

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    border: 0 none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.header-content {
+    background-color: #C8BFE7;
+}
+
+.contatos-header {
+    display: flex;
+    flex-direction: row;
+    margin: 0 2vw 0.5vh 2vw;
+    padding-top: 1vh;
+}
+
+.sociais-header {
+    font-size: 17px;
+    width: 82vw;
+}
+
+.sociais-header i {
+    cursor: pointer;
+}
+
+.sociais-header i:first-child {
+    margin: 0 2vw 0 2vw;
+}
+
+.telefone-header {
+    cursor: default;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    width: 18vw;
+}
+
+#separacao-linha {
+    margin: 0 2vw 0 2vw;
+}
+
+.div-principal {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 2vw 0 2vw;
+    padding: 1vw;
+    text-align: center;
+}
+
+.div-pesquisa input {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
+    font-family: 'Montserrat';
+    height: 4.6vh;
+    margin-left: 4%;
+    padding: 3.5px 3.5px 3.5px 6px;
+    width: 20vw;
+}
+
+.div-pesquisa button {
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border: none;
+    cursor: pointer;
+    cursor: text;
+    height: 5.7vh;
+    margin-left: -1%;
+    width: 3vw;
+}
+
+.div-icone {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.div-icone a {
+    color: black;
+    text-decoration: none;
+}
+
+.header-menu ul {
+    align-items: center;
+    background-color: #F29292;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 1vw;
+    font-family: 'Fredoka';
+}
+
+.header-menu li {
+    margin-left: 4vw;
+}
+
+.header-menu ul li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header-menu li a:hover {
+    color: #4c4469;
+    transition: 0.25s;
+}
