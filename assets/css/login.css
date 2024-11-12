@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to left, #C8BFE7, #F29292);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 0 auto 0 auto;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+}
+
+span {
+    font-size: 14px;
+    margin-top: 1rem;
+    font-family: "Montserrat", sans-serif;
+    cursor: default;
+}
+
+span a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #382680;
+}
+
+span a:hover {
+    color: #F29292;
+}
+
+
+#logo {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.div-content {
+    display: flex;
+    flex-direction: column;
+    color: #241F21;
+    width: 50vw;
+    margin: 1vh auto 5vh auto;
+    padding: 2vw;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgb(250, 250, 250);
+}
+
+.div-content h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 35px;
+    margin-bottom: 5vh;
+    cursor: default;
+}
+
+.conjunto {
+    margin: 0.3rem 0 0.3rem 0;
+}
+
+.conjunto input {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    border: 1px lightgrey solid;
+    margin: 2vh 0 5vh 0;
+    padding: 0.5rem;
+    width: 32vw;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.conjunto input:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.div-content button {
+    width: 35vw;
+    height: 7vh;
+    border-radius: 10px;
+    background-color: #C8BFE7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh auto 3vh auto;
+    cursor: pointer;
+}
+
+.div-content button p {
+    font-weight: bold;
+}
+
+input {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 0.5rem;
+    border: 1px lightgrey solid;
+    margin: 0.6rem 0 0.6rem 0;
+    padding: 0.5rem;
+    width: 96%;
+    
+}
+
+#login {
+    width: 449px;
+    height: 39px;
+    border-radius: 0.5rem;
+    background-color: #C8BFE7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+    align-self: center;
+}
+
+
+
+
