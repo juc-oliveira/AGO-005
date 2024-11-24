@@ -5,21 +5,21 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-# Instalar PHP
-- task: UsePhpVersion@0
-  inputs:
-    version: '7.4' # Escolha a versão do PHP que você precisa
+# Instalar PHP 7.4 manualmente
+- script: |
+    sudo apt-get update
+    sudo apt-get install php7.4
+    php -v
   displayName: 'Instalar PHP 7.4'
 
 
-# Configurar MySQL para o banco de dados
-- task: Mysql@0
-  inputs:
-    serverName: 'localhost'
-    databaseName: 'petshop_db'
-    sqlUserName: 'root'
-    sqlPassword: 'password' # Alterar para a senha correta
-  displayName: 'Configurar MySQL'
+# Instalar e configurar MySQL
+- script: |
+    sudo apt-get update
+    sudo apt-get install mysql-server
+    sudo service mysql start
+    mysql -e "CREATE DATABASE petshop_db;" -u root
+  displayName: 'Instalar e configurar MySQL'
 
 # Executar testes (se aplicável)
 - script: |
