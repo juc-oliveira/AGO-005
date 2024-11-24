@@ -1,0 +1,32 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+# Instalar PHP
+- task: UsePhpVersion@0
+  inputs:
+    version: '7.4' # Escolha a versão do PHP que você precisa
+  displayName: 'Instalar PHP 7.4'
+
+
+# Configurar MySQL para o banco de dados
+- task: Mysql@0
+  inputs:
+    serverName: 'localhost'
+    databaseName: 'petshop_db'
+    sqlUserName: 'root'
+    sqlPassword: 'password' # Alterar para a senha correta
+  displayName: 'Configurar MySQL'
+
+# Executar testes (se aplicável)
+- script: |
+    ./vendor/bin/phpunit tests
+  displayName: 'Rodar testes do PHP com PHPUnit'
+  
+# Rodar o servidor PHP para verificação
+- script: |
+    php -S localhost:8000 -t public
+  displayName: 'Iniciar servidor PHP local'
